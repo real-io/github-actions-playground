@@ -1,1 +1,1 @@
-console.log("This is the test version 3.0.0");
+console.log("Releasing a new package version");
