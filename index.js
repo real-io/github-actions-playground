@@ -1,1 +1,1 @@
-console.log("Releasing a new package version");
+console.log("Releasing a new major version");

@@ -72,16 +72,13 @@ jobs:
     needs: test-build
     runs-on: ubuntu-latest
     steps:
-      # - name: Download Package Files
-      #   uses: actions/download-artifact@v4
-      #   with: 
-      #     # Name of the artifact to download.
-      #     # If unspecified, all artifacts for the run are downloaded.
-      #     # Optional.
-      #     name: package-files
-
       - name: Download Package Files
-        run: echo 'Download Package Files'
+        uses: actions/download-artifact@v4
+        with: 
+          # Name of the artifact to download.
+          # If unspecified, all artifacts for the run are downloaded.
+          # Optional.
+          name: package-files
 
       - name: Create Release
         id: create_release_id
