@@ -1,5 +1,5 @@
 {
-  "version": "6.1.2-1",
+  "version": "6.1.2",
   "name": "@real-io/github-actions-playground",
   "description": "This is a template repository for basic relead and publishing of github packages",
   "main": "index.js",
