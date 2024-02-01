@@ -51,10 +51,10 @@ jobs:
           # A file, directory or wildcard pattern that describes what to upload
           # Required.
           path: |
-            ./index.js
-            ./LICENSE
-            ./README.md
-            ./package.json
+            index.js
+            LICENSE
+            README.md
+            package.json
 
           # The desired behavior if no files are found using the provided path.
           # Available Options:
