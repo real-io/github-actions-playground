@@ -26,7 +26,11 @@ jobs:
       - name: Bump Version
         uses: "phips28/gh-action-bump-version@master"
         with:
-          tag-prefix: ''
+          patch-wording: 'jinx'
+          minor-wording: 'charmander, bulbasaur, squirtle'
+          major-wording: 'pikachu, charizard'
+          rc-wording: 'missingno'
+
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
