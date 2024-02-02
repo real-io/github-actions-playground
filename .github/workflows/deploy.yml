@@ -24,7 +24,7 @@ jobs:
           build_command: 'echo "Building...."'
 
       - name: Check Deploy Outs
-        run: echo "${{ env.NETLIFY_OUTPUT }}"
+        run: echo "${{ env.NETLIFY_OUTPUT }}" | grep deployId
 
       # Creates a status check with link to preview
       - name: Status check
