@@ -23,6 +23,9 @@ jobs:
           build_directory: public
           build_command: 'echo "Building...."'
 
+      - name: Check Deploy Outs
+        run: echo "${{ env.NETLIFY_OUTPUT }}"
+
       # Creates a status check with link to preview
       - name: Status check
         uses: Sibz/github-status-action@v1.1.1
