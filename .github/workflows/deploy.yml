@@ -21,7 +21,7 @@ jobs:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
           deploy_alias: ${{ env.BRANCH_NAME }}
           build_directory: public
-          build_command: false
+          build_command: 'echo "Building...."'
 
       # Creates a status check with link to preview
       - name: Status check
